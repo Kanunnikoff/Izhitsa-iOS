@@ -1,0 +1,634 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0A20384D22F6379F00E3D37D /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20384C22F6379F00E3D37D /* KeyboardButton.swift */; };
+		0A20385222F6382A00E3D37D /* KeyboardButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A20384C22F6379F00E3D37D /* KeyboardButton.swift */; };
+		0A20385722F6382A00E3D37D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A57E0DB22E1F1C70029FDCE /* Assets.xcassets */; };
+		0A2F761222EB94BB0052C604 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2F761122EB94BB0052C604 /* KeyboardView.xib */; };
+		0A57E0D522E1F1C60029FDCE /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57E0D422E1F1C60029FDCE /* AppDelegate.swift */; };
+		0A57E0D722E1F1C60029FDCE /* PracticeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57E0D622E1F1C60029FDCE /* PracticeViewController.swift */; };
+		0A57E0DA22E1F1C60029FDCE /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A57E0D822E1F1C60029FDCE /* Main.storyboard */; };
+		0A57E0DC22E1F1C70029FDCE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A57E0DB22E1F1C70029FDCE /* Assets.xcassets */; };
+		0A57E0DF22E1F1C70029FDCE /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A57E0DD22E1F1C70029FDCE /* LaunchScreen.storyboard */; };
+		0A57E0ED22E1F3700029FDCE /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57E0EC22E1F3700029FDCE /* KeyboardViewController.swift */; };
+		0A57E0F122E1F3700029FDCE /* keyboard.appex in Embed App Extensions */ = {isa = PBXBuildFile; fileRef = 0A57E0EA22E1F3700029FDCE /* keyboard.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		0A72F93222F89634009BB86D /* Core.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A72F93122F89634009BB86D /* Core.swift */; };
+		0A72F93422F8976D009BB86D /* Util.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A72F93322F8976D009BB86D /* Util.swift */; };
+		0A72F93622F8985A009BB86D /* StoreObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A72F93522F8985A009BB86D /* StoreObserver.swift */; };
+		0A72F93822F8C30E009BB86D /* StoreKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 0A72F93722F8C30E009BB86D /* StoreKit.framework */; };
+		0A72F93A22F8C4EC009BB86D /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 0A72F93922F8C4EC009BB86D /* GoogleService-Info.plist */; };
+		0AAB54DD22ECFC2400F7AC92 /* KeyboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A57E0EC22E1F3700029FDCE /* KeyboardViewController.swift */; };
+		0AAB54DE22ECFC3400F7AC92 /* KeyboardView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0A2F761122EB94BB0052C604 /* KeyboardView.xib */; };
+		22CB9BF9F8D35F8E55917B21 /* Pods_keyboard.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 8726653EA7C70E431C1F2DD1 /* Pods_keyboard.framework */; };
+		A9400ECA14537BA30853919E /* Pods_izhitsa.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 771B8C172CC1E08C57B6E147 /* Pods_izhitsa.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		0A57E0EF22E1F3700029FDCE /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 0A57E0C922E1F1C60029FDCE /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 0A57E0E922E1F3700029FDCE;
+			remoteInfo = keyboard;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		0A57E0F522E1F3700029FDCE /* Embed App Extensions */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 13;
+			files = (
+				0A57E0F122E1F3700029FDCE /* keyboard.appex in Embed App Extensions */,
+			);
+			name = "Embed App Extensions";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		0A20384C22F6379F00E3D37D /* KeyboardButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardButton.swift; sourceTree = "<group>"; };
+		0A2F761122EB94BB0052C604 /* KeyboardView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = KeyboardView.xib; sourceTree = "<group>"; };
+		0A57E0D122E1F1C60029FDCE /* izhitsa.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = izhitsa.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A57E0D422E1F1C60029FDCE /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		0A57E0D622E1F1C60029FDCE /* PracticeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PracticeViewController.swift; sourceTree = "<group>"; };
+		0A57E0DB22E1F1C70029FDCE /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		0A57E0E022E1F1C70029FDCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A57E0EA22E1F3700029FDCE /* keyboard.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = keyboard.appex; sourceTree = BUILT_PRODUCTS_DIR; };
+		0A57E0EC22E1F3700029FDCE /* KeyboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardViewController.swift; sourceTree = "<group>"; };
+		0A57E0EE22E1F3700029FDCE /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A72F92C22F89168009BB86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		0A72F92D22F89168009BB86D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		0A72F93122F89634009BB86D /* Core.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Core.swift; sourceTree = "<group>"; };
+		0A72F93322F8976D009BB86D /* Util.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Util.swift; sourceTree = "<group>"; };
+		0A72F93522F8985A009BB86D /* StoreObserver.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StoreObserver.swift; sourceTree = "<group>"; };
+		0A72F93722F8C30E009BB86D /* StoreKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = StoreKit.framework; path = System/Library/Frameworks/StoreKit.framework; sourceTree = SDKROOT; };
+		0A72F93922F8C4EC009BB86D /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		2A783252F0935ECEA6BDEEB0 /* Pods-izhitsa.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-izhitsa.release.xcconfig"; path = "Target Support Files/Pods-izhitsa/Pods-izhitsa.release.xcconfig"; sourceTree = "<group>"; };
+		771B8C172CC1E08C57B6E147 /* Pods_izhitsa.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_izhitsa.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		8726653EA7C70E431C1F2DD1 /* Pods_keyboard.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_keyboard.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		92DED4ECB17F8E855952468D /* Pods-keyboard.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboard.release.xcconfig"; path = "Target Support Files/Pods-keyboard/Pods-keyboard.release.xcconfig"; sourceTree = "<group>"; };
+		A9E4D2E3C14058F77BBF5271 /* Pods-izhitsa.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-izhitsa.debug.xcconfig"; path = "Target Support Files/Pods-izhitsa/Pods-izhitsa.debug.xcconfig"; sourceTree = "<group>"; };
+		DEAFD82D79467059C5C702BB /* Pods-keyboard.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-keyboard.debug.xcconfig"; path = "Target Support Files/Pods-keyboard/Pods-keyboard.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		0A57E0CE22E1F1C60029FDCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				A9400ECA14537BA30853919E /* Pods_izhitsa.framework in Frameworks */,
+				0A72F93822F8C30E009BB86D /* StoreKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A57E0E722E1F3700029FDCE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22CB9BF9F8D35F8E55917B21 /* Pods_keyboard.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		0A57E0C822E1F1C60029FDCE = {
+			isa = PBXGroup;
+			children = (
+				0A57E0D322E1F1C60029FDCE /* izhitsa */,
+				0A57E0EB22E1F3700029FDCE /* keyboard */,
+				0A57E0D222E1F1C60029FDCE /* Products */,
+				0A72F92E22F89194009BB86D /* Frameworks */,
+				4E266563D8371D9D7A12E5F1 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		0A57E0D222E1F1C60029FDCE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				0A57E0D122E1F1C60029FDCE /* izhitsa.app */,
+				0A57E0EA22E1F3700029FDCE /* keyboard.appex */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		0A57E0D322E1F1C60029FDCE /* izhitsa */ = {
+			isa = PBXGroup;
+			children = (
+				0A72F93922F8C4EC009BB86D /* GoogleService-Info.plist */,
+				0A20384C22F6379F00E3D37D /* KeyboardButton.swift */,
+				0A57E0D422E1F1C60029FDCE /* AppDelegate.swift */,
+				0A57E0D622E1F1C60029FDCE /* PracticeViewController.swift */,
+				0A57E0D822E1F1C60029FDCE /* Main.storyboard */,
+				0A57E0DB22E1F1C70029FDCE /* Assets.xcassets */,
+				0A57E0DD22E1F1C70029FDCE /* LaunchScreen.storyboard */,
+				0A57E0E022E1F1C70029FDCE /* Info.plist */,
+				0A72F93122F89634009BB86D /* Core.swift */,
+				0A72F93322F8976D009BB86D /* Util.swift */,
+				0A72F93522F8985A009BB86D /* StoreObserver.swift */,
+			);
+			path = izhitsa;
+			sourceTree = "<group>";
+		};
+		0A57E0EB22E1F3700029FDCE /* keyboard */ = {
+			isa = PBXGroup;
+			children = (
+				0A57E0EC22E1F3700029FDCE /* KeyboardViewController.swift */,
+				0A57E0EE22E1F3700029FDCE /* Info.plist */,
+				0A2F761122EB94BB0052C604 /* KeyboardView.xib */,
+			);
+			path = keyboard;
+			sourceTree = "<group>";
+		};
+		0A72F92E22F89194009BB86D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				0A72F93722F8C30E009BB86D /* StoreKit.framework */,
+				771B8C172CC1E08C57B6E147 /* Pods_izhitsa.framework */,
+				8726653EA7C70E431C1F2DD1 /* Pods_keyboard.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4E266563D8371D9D7A12E5F1 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				A9E4D2E3C14058F77BBF5271 /* Pods-izhitsa.debug.xcconfig */,
+				2A783252F0935ECEA6BDEEB0 /* Pods-izhitsa.release.xcconfig */,
+				DEAFD82D79467059C5C702BB /* Pods-keyboard.debug.xcconfig */,
+				92DED4ECB17F8E855952468D /* Pods-keyboard.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		0A57E0D022E1F1C60029FDCE /* izhitsa */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A57E0E322E1F1C70029FDCE /* Build configuration list for PBXNativeTarget "izhitsa" */;
+			buildPhases = (
+				EEF52C27CBD52EED6695A395 /* [CP] Check Pods Manifest.lock */,
+				0A57E0CD22E1F1C60029FDCE /* Sources */,
+				0A57E0CE22E1F1C60029FDCE /* Frameworks */,
+				0A57E0CF22E1F1C60029FDCE /* Resources */,
+				0A57E0F522E1F3700029FDCE /* Embed App Extensions */,
+				F43A75746311DB9C2E12205B /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				0A57E0F022E1F3700029FDCE /* PBXTargetDependency */,
+			);
+			name = izhitsa;
+			productName = izhitsa;
+			productReference = 0A57E0D122E1F1C60029FDCE /* izhitsa.app */;
+			productType = "com.apple.product-type.application";
+		};
+		0A57E0E922E1F3700029FDCE /* keyboard */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 0A57E0F422E1F3700029FDCE /* Build configuration list for PBXNativeTarget "keyboard" */;
+			buildPhases = (
+				4BA77824A96B685B647B6C9E /* [CP] Check Pods Manifest.lock */,
+				0A57E0E622E1F3700029FDCE /* Sources */,
+				0A57E0E722E1F3700029FDCE /* Frameworks */,
+				0A57E0E822E1F3700029FDCE /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = keyboard;
+			productName = keyboard;
+			productReference = 0A57E0EA22E1F3700029FDCE /* keyboard.appex */;
+			productType = "com.apple.product-type.app-extension";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		0A57E0C922E1F1C60029FDCE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1010;
+				LastUpgradeCheck = 1010;
+				ORGANIZATIONNAME = "Dmitry Kanunnikoff";
+				TargetAttributes = {
+					0A57E0D022E1F1C60029FDCE = {
+						CreatedOnToolsVersion = 10.1;
+						SystemCapabilities = {
+							com.apple.InAppPurchase = {
+								enabled = 1;
+							};
+						};
+					};
+					0A57E0E922E1F3700029FDCE = {
+						CreatedOnToolsVersion = 10.1;
+					};
+				};
+			};
+			buildConfigurationList = 0A57E0CC22E1F1C60029FDCE /* Build configuration list for PBXProject "izhitsa" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+			);
+			mainGroup = 0A57E0C822E1F1C60029FDCE;
+			productRefGroup = 0A57E0D222E1F1C60029FDCE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				0A57E0D022E1F1C60029FDCE /* izhitsa */,
+				0A57E0E922E1F3700029FDCE /* keyboard */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		0A57E0CF22E1F1C60029FDCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A57E0DF22E1F1C70029FDCE /* LaunchScreen.storyboard in Resources */,
+				0AAB54DE22ECFC3400F7AC92 /* KeyboardView.xib in Resources */,
+				0A72F93A22F8C4EC009BB86D /* GoogleService-Info.plist in Resources */,
+				0A57E0DC22E1F1C70029FDCE /* Assets.xcassets in Resources */,
+				0A57E0DA22E1F1C60029FDCE /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A57E0E822E1F3700029FDCE /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A20385722F6382A00E3D37D /* Assets.xcassets in Resources */,
+				0A2F761222EB94BB0052C604 /* KeyboardView.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		4BA77824A96B685B647B6C9E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-keyboard-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		EEF52C27CBD52EED6695A395 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-izhitsa-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F43A75746311DB9C2E12205B /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-izhitsa/Pods-izhitsa-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-izhitsa/Pods-izhitsa-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-izhitsa/Pods-izhitsa-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0A57E0CD22E1F1C60029FDCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A20384D22F6379F00E3D37D /* KeyboardButton.swift in Sources */,
+				0A72F93422F8976D009BB86D /* Util.swift in Sources */,
+				0A57E0D722E1F1C60029FDCE /* PracticeViewController.swift in Sources */,
+				0AAB54DD22ECFC2400F7AC92 /* KeyboardViewController.swift in Sources */,
+				0A72F93222F89634009BB86D /* Core.swift in Sources */,
+				0A72F93622F8985A009BB86D /* StoreObserver.swift in Sources */,
+				0A57E0D522E1F1C60029FDCE /* AppDelegate.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		0A57E0E622E1F3700029FDCE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				0A20385222F6382A00E3D37D /* KeyboardButton.swift in Sources */,
+				0A57E0ED22E1F3700029FDCE /* KeyboardViewController.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		0A57E0F022E1F3700029FDCE /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 0A57E0E922E1F3700029FDCE /* keyboard */;
+			targetProxy = 0A57E0EF22E1F3700029FDCE /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		0A57E0D822E1F1C60029FDCE /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A72F92C22F89168009BB86D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		0A57E0DD22E1F1C70029FDCE /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				0A72F92D22F89168009BB86D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		0A57E0E122E1F1C70029FDCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		0A57E0E222E1F1C70029FDCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.1;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		0A57E0E422E1F1C70029FDCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = A9E4D2E3C14058F77BBF5271 /* Pods-izhitsa.debug.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				INFOPLIST_FILE = izhitsa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.izhitsa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = IzhitsaDevelopmentProvisioningProfile;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A57E0E522E1F1C70029FDCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2A783252F0935ECEA6BDEEB0 /* Pods-izhitsa.release.xcconfig */;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				INFOPLIST_FILE = izhitsa/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.izhitsa;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = IzhitsaDistributionProvisioningProfile;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		0A57E0F222E1F3700029FDCE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DEAFD82D79467059C5C702BB /* Pods-keyboard.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				INFOPLIST_FILE = keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.izhitsa.keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = IzhitsaKeyboardDevelopmentProvisioningProfile;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		0A57E0F322E1F3700029FDCE /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 92DED4ECB17F8E855952468D /* Pods-keyboard.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "iPhone Distribution";
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = 9FJ6F4TT5T;
+				INFOPLIST_FILE = keyboard/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@executable_path/../../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = software.kanunnikoff.izhitsa.keyboard;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = IzhitsaKeyboardDistributionProvisioningProfile;
+				SKIP_INSTALL = YES;
+				SWIFT_VERSION = 4.2;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		0A57E0CC22E1F1C60029FDCE /* Build configuration list for PBXProject "izhitsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A57E0E122E1F1C70029FDCE /* Debug */,
+				0A57E0E222E1F1C70029FDCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A57E0E322E1F1C70029FDCE /* Build configuration list for PBXNativeTarget "izhitsa" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A57E0E422E1F1C70029FDCE /* Debug */,
+				0A57E0E522E1F1C70029FDCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		0A57E0F422E1F3700029FDCE /* Build configuration list for PBXNativeTarget "keyboard" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				0A57E0F222E1F3700029FDCE /* Debug */,
+				0A57E0F322E1F3700029FDCE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 0A57E0C922E1F1C60029FDCE /* Project object */;
+}

@@ -1,0 +1,775 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="KeyboardViewController" customModule="izhitsa" customModuleProvider="target">
+            <connections>
+                <outlet property="backspaceButton" destination="iuo-Iq-g07" id="Zeg-Jp-DFd"/>
+                <outlet property="nextKeyboardButton" destination="x2k-L4-lUz" id="0jU-iR-CiO"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="329" height="175"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rKV-6y-OV6" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="2" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Ffg-XH-AJv"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="T4G-G9-EAk"/>
+                    </constraints>
+                    <state key="normal" title="й">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Ohi-cS-HHV"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jPt-kk-5IE" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="32" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="hWR-Ax-iOq"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="kQg-YW-zVR"/>
+                    </constraints>
+                    <state key="normal" title="ц">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="6Nt-me-vGe"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="lw7-8L-e5R" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="62" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="4QD-kd-e8c"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="5hO-so-kSy"/>
+                    </constraints>
+                    <state key="normal" title="у">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Slq-dj-1Da"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6Dl-nb-bDz" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="92" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="a9j-O3-QUh"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="paI-hh-qfj"/>
+                    </constraints>
+                    <state key="normal" title="к">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="ac9-5S-PZn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kM3-ex-kJD" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="122" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="PKe-kM-0tU"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="ga8-Fb-2zY"/>
+                    </constraints>
+                    <state key="normal" title="е">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Cm6-oT-fYF"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="gG9-tr-5Vw" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="152" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="1k2-wc-dhZ"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="jl2-s2-qUO"/>
+                    </constraints>
+                    <state key="normal" title="н">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="GXs-EG-gzt"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="tGK-V2-vw1" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="182" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="D0s-8i-vAc"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="cd3-gM-gGV"/>
+                    </constraints>
+                    <state key="normal" title="г">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="rSE-a5-nvn"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZRb-GI-fqa" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="212" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="CoU-AY-UN1"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="mYf-NO-mMl"/>
+                    </constraints>
+                    <state key="normal" title="ш">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="GA7-Te-4hG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sPq-AE-icS" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="242" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="F90-8S-zec"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="H4z-mi-9WR"/>
+                    </constraints>
+                    <state key="normal" title="щ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="dMN-dZ-YJw"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="nVd-pP-CnH" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="272" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="0hT-wY-0EA"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Km9-AW-vSr"/>
+                    </constraints>
+                    <state key="normal" title="з">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="GJ5-OE-vnp"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ke4-d8-s9y" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="302" y="7" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="7DC-PJ-QED"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Ghb-d2-4xd"/>
+                    </constraints>
+                    <state key="normal" title="х">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Iam-WL-0ac"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="r2j-jK-BJn" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="2" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="3t8-Tp-MfW"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="QU3-0h-L29"/>
+                    </constraints>
+                    <state key="normal" title="ф">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="3h6-Vh-elv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WML-06-V8W" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="32" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Gic-Zn-cLC"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="WbD-fF-0Yc"/>
+                    </constraints>
+                    <state key="normal" title="ы">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="gwU-S3-6t8"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3vw-re-WVQ" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="62" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="4P4-cU-gC1"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="WgH-tl-MgL"/>
+                    </constraints>
+                    <state key="normal" title="в">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="dLO-qM-fWU"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Oo-pk-LW6" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="92" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="hjC-vE-iSx"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="pEk-Lb-rA1"/>
+                    </constraints>
+                    <state key="normal" title="а">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="niE-00-t4g"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="JDe-So-h4s" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="122" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="IFu-lD-YdA"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="gZe-lT-C0K"/>
+                    </constraints>
+                    <state key="normal" title="п">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="9cW-Gc-GCl"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="fHY-5k-Yip" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="152" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="DYw-kX-Z9P"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="qef-wX-Qit"/>
+                    </constraints>
+                    <state key="normal" title="р">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="D0W-RW-dqh"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s6z-wY-anF" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="182" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Bn4-jY-LKD"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="iVv-Bk-Kv1"/>
+                    </constraints>
+                    <state key="normal" title="о">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="vaS-nn-3dN"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="R5r-Fk-cnX" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="212" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="LIw-2Q-Jnv"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="UeT-M3-M6l"/>
+                    </constraints>
+                    <state key="normal" title="л">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="NgF-qB-Rnk"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UbB-jF-wVb" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="242" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="2bV-g5-gfM"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Ay6-1l-PfG"/>
+                    </constraints>
+                    <state key="normal" title="д">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Sm6-Xj-1pd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="J0O-SM-QZ9" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="272" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="FKW-zY-J1v"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="oyL-jr-a8G"/>
+                    </constraints>
+                    <state key="normal" title="ж">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="EhW-rg-SIS"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7QV-8B-gUL" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="302" y="50" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="fFy-aD-hxi"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="nHB-ae-icA"/>
+                    </constraints>
+                    <state key="normal" title="э">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="1hp-zZ-BGv"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C9I-Zb-HsP" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="32" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="gqw-3l-5Ie"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="tIt-Za-mWM"/>
+                    </constraints>
+                    <state key="normal" title="я">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="dcq-lk-xEr"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Spv-AK-iz0" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="62" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="W31-z3-lQS"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="rF5-Tk-5S2"/>
+                    </constraints>
+                    <state key="normal" title="ч">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="PbN-3J-drZ"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zai-QH-Zp8" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="92" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="8al-Yc-GnD"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="wXT-28-vwc"/>
+                    </constraints>
+                    <state key="normal" title="с">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="tYV-hV-Fm0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="kef-XF-qyt" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="122" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="6Lo-SC-GO0"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="lzN-N7-cgC"/>
+                    </constraints>
+                    <state key="normal" title="м">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="V2R-ub-0oj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iXR-tN-R5h" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="152" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="eDr-Lx-HTW"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="uth-4K-Od7"/>
+                    </constraints>
+                    <state key="normal" title="и">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="gGC-eu-6Or"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="m9K-u2-ZYa" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="182" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="0if-eU-XDh"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="IeF-MK-qvs"/>
+                    </constraints>
+                    <state key="normal" title="т">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="GFJ-hs-WQj"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ijR-Lc-nYp" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="212" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="56A-52-wRn"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="KCi-NJ-Q64"/>
+                    </constraints>
+                    <state key="normal" title="ь">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="5qU-6n-enf"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UNx-ge-3dP" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="242" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Exk-gg-Puk"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Rdu-2d-hJu"/>
+                    </constraints>
+                    <state key="normal" title="б">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="WtO-5b-bAd"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N81-aV-jag" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="272" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="1rb-11-xWB"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="aV2-cQ-uit"/>
+                    </constraints>
+                    <state key="normal" title="ю">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="PuS-oF-s0R"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="iuo-Iq-g07" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="302" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" red="0.65490196078431373" green="0.68627450980392157" blue="0.72941176470588232" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="etA-Py-sEM"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="pcw-mH-VkE"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="5" maxY="0.0"/>
+                    <state key="normal" title="BS">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="backspacePressed:" destination="-1" eventType="touchUpInside" id="aUb-kI-dRG"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="o8O-uG-ypu" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="62" y="135" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="91l-HN-QCi"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Bj0-qA-daN"/>
+                    </constraints>
+                    <state key="normal" title="ѣ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="9Tm-7I-w3S"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="VXN-ms-Hwd" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="92" y="135" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="X7x-da-qsr"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="qqb-qE-ep2"/>
+                    </constraints>
+                    <state key="normal" title="і">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="Pgq-aG-O3P"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="blT-jd-tor" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="122" y="135" width="85" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="blT-RQ-zAy"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="85" id="e2Q-Rx-FeC"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <state key="normal" title="Пробѣлъ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="spacePressed:" destination="-1" eventType="touchUpInside" id="EZR-gX-42z"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="C6f-kn-HRy" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="242" y="135" width="24.5" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="XmJ-5x-cfY"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="jTh-Lu-SaU"/>
+                    </constraints>
+                    <state key="normal" title="ѵ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="MB5-pB-6G0"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SLN-u7-nZ5" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="272" y="135" width="55" height="35"/>
+                    <color key="backgroundColor" red="0.65490196078431373" green="0.68627450980392157" blue="0.72941176470588232" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="55" id="GUV-fn-FXv"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="zNf-KU-fJu"/>
+                    </constraints>
+                    <state key="normal" title="Вводъ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="returnPressed:" destination="-1" eventType="touchUpInside" id="x64-8W-ali"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x2k-L4-lUz" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="2" y="135" width="25" height="35"/>
+                    <color key="backgroundColor" red="0.65490196078431373" green="0.68627450980392157" blue="0.72941176470588232" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="3sl-Ib-9vr"/>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="ds9-aA-p1f"/>
+                    </constraints>
+                    <state key="normal" image="NextKeyboard">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DaW-KR-jsg" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="212" y="135" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="Beu-Se-1Gh"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="Gut-Vt-PAw"/>
+                    </constraints>
+                    <state key="normal" title="ѳ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="bM7-Ic-naI"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="N6X-9a-rNB" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="2" y="93" width="25" height="35"/>
+                    <color key="backgroundColor" red="0.65490196078431373" green="0.68627450980392157" blue="0.72941176470588232" alpha="1" colorSpace="deviceRGB"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="7EQ-eO-mXT"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="sjw-IR-F7l"/>
+                    </constraints>
+                    <fontDescription key="fontDescription" type="system" pointSize="15"/>
+                    <state key="normal" title="CL">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="capslockPressed:" destination="-1" eventType="touchUpInside" id="37Q-dL-kF2"/>
+                    </connections>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="XJM-lW-yIr" customClass="KeyboardButton" customModule="izhitsa" customModuleProvider="target">
+                    <rect key="frame" x="32" y="135" width="25" height="35"/>
+                    <color key="backgroundColor" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="35" id="HwF-Ta-dzG"/>
+                        <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="25" id="K27-pq-H1v"/>
+                    </constraints>
+                    <state key="normal" title="ъ">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="keyPressed:" destination="-1" eventType="touchUpInside" id="TSE-Kr-pmF"/>
+                    </connections>
+                </button>
+            </subviews>
+            <color key="backgroundColor" red="0.81568627450980391" green="0.82745098039215681" blue="0.84705882352941175" alpha="1" colorSpace="deviceRGB"/>
+            <constraints>
+                <constraint firstItem="r2j-jK-BJn" firstAttribute="height" secondItem="rKV-6y-OV6" secondAttribute="height" id="0AH-y2-dvt"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="o8O-uG-ypu" secondAttribute="bottom" constant="5" id="0f7-pd-dRg"/>
+                <constraint firstItem="UbB-jF-wVb" firstAttribute="top" secondItem="sPq-AE-icS" secondAttribute="bottom" constant="8" id="0jn-r5-XaR"/>
+                <constraint firstItem="ZRb-GI-fqa" firstAttribute="leading" secondItem="tGK-V2-vw1" secondAttribute="trailing" constant="5" id="18D-Yg-ODs"/>
+                <constraint firstItem="VXN-ms-Hwd" firstAttribute="top" secondItem="zai-QH-Zp8" secondAttribute="bottom" constant="7" id="1F8-Vd-qFF"/>
+                <constraint firstItem="J0O-SM-QZ9" firstAttribute="height" secondItem="nVd-pP-CnH" secondAttribute="height" id="1WY-Nu-hHb"/>
+                <constraint firstItem="r2j-jK-BJn" firstAttribute="top" secondItem="rKV-6y-OV6" secondAttribute="bottom" constant="8" id="1eL-zy-tjX"/>
+                <constraint firstItem="fHY-5k-Yip" firstAttribute="top" secondItem="gG9-tr-5Vw" secondAttribute="bottom" constant="8" id="2IZ-sR-RE7"/>
+                <constraint firstItem="m9K-u2-ZYa" firstAttribute="height" secondItem="s6z-wY-anF" secondAttribute="height" id="2Sc-Pr-0aC"/>
+                <constraint firstItem="zai-QH-Zp8" firstAttribute="top" secondItem="7Oo-pk-LW6" secondAttribute="bottom" constant="8" id="2jD-Uy-SpO"/>
+                <constraint firstItem="6Dl-nb-bDz" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="2w5-rR-lPx"/>
+                <constraint firstItem="WML-06-V8W" firstAttribute="leading" secondItem="r2j-jK-BJn" secondAttribute="trailing" constant="5" id="30e-rd-EbE"/>
+                <constraint firstItem="sPq-AE-icS" firstAttribute="leading" secondItem="ZRb-GI-fqa" secondAttribute="trailing" constant="5" id="3ox-cL-q27"/>
+                <constraint firstItem="gG9-tr-5Vw" firstAttribute="width" secondItem="kM3-ex-kJD" secondAttribute="width" id="4iR-86-jva"/>
+                <constraint firstItem="SLN-u7-nZ5" firstAttribute="width" secondItem="C6f-kn-HRy" secondAttribute="width" multiplier="2" constant="6" id="4pL-zS-6BP"/>
+                <constraint firstItem="x2k-L4-lUz" firstAttribute="top" secondItem="N6X-9a-rNB" secondAttribute="bottom" constant="7" id="5hD-36-Btz"/>
+                <constraint firstItem="JDe-So-h4s" firstAttribute="leading" secondItem="7Oo-pk-LW6" secondAttribute="trailing" constant="5" id="5t4-gb-eg1"/>
+                <constraint firstItem="gG9-tr-5Vw" firstAttribute="leading" secondItem="kM3-ex-kJD" secondAttribute="trailing" constant="5" id="5vc-dg-MZz"/>
+                <constraint firstItem="R5r-Fk-cnX" firstAttribute="height" secondItem="ZRb-GI-fqa" secondAttribute="height" id="6YT-PX-pax"/>
+                <constraint firstItem="3vw-re-WVQ" firstAttribute="leading" secondItem="WML-06-V8W" secondAttribute="trailing" constant="5" id="6pm-bI-We5"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="VXN-ms-Hwd" secondAttribute="bottom" constant="5" id="6vE-uJ-fhN"/>
+                <constraint firstItem="C9I-Zb-HsP" firstAttribute="leading" secondItem="N6X-9a-rNB" secondAttribute="trailing" constant="5" id="6zZ-Et-6OO"/>
+                <constraint firstItem="ijR-Lc-nYp" firstAttribute="leading" secondItem="m9K-u2-ZYa" secondAttribute="trailing" constant="5" id="7Cq-s1-0cs"/>
+                <constraint firstItem="iuo-Iq-g07" firstAttribute="top" secondItem="7QV-8B-gUL" secondAttribute="bottom" constant="8" id="7QC-4x-3U6"/>
+                <constraint firstItem="sPq-AE-icS" firstAttribute="width" secondItem="ZRb-GI-fqa" secondAttribute="width" id="7qh-Q2-PVH"/>
+                <constraint firstItem="m9K-u2-ZYa" firstAttribute="leading" secondItem="iXR-tN-R5h" secondAttribute="trailing" constant="5" id="8n9-YJ-L2p"/>
+                <constraint firstItem="zai-QH-Zp8" firstAttribute="height" secondItem="7Oo-pk-LW6" secondAttribute="height" id="9LS-wg-sX5"/>
+                <constraint firstItem="tGK-V2-vw1" firstAttribute="width" secondItem="gG9-tr-5Vw" secondAttribute="width" id="9nZ-wb-TO7"/>
+                <constraint firstItem="DaW-KR-jsg" firstAttribute="top" secondItem="ijR-Lc-nYp" secondAttribute="bottom" constant="7" id="A2e-8S-JDd"/>
+                <constraint firstItem="zai-QH-Zp8" firstAttribute="leading" secondItem="Spv-AK-iz0" secondAttribute="trailing" constant="5" id="ATy-7L-48J"/>
+                <constraint firstItem="ZRb-GI-fqa" firstAttribute="width" secondItem="tGK-V2-vw1" secondAttribute="width" id="AWt-ji-Vd2"/>
+                <constraint firstItem="R5r-Fk-cnX" firstAttribute="width" secondItem="s6z-wY-anF" secondAttribute="width" id="Agi-9C-D9j"/>
+                <constraint firstItem="UNx-ge-3dP" firstAttribute="width" secondItem="ijR-Lc-nYp" secondAttribute="width" id="Avl-KO-euf"/>
+                <constraint firstItem="blT-jd-tor" firstAttribute="height" secondItem="m9K-u2-ZYa" secondAttribute="height" id="BFP-ff-BhP"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ke4-d8-s9y" secondAttribute="trailing" constant="2" id="BGn-R7-XUM"/>
+                <constraint firstItem="m9K-u2-ZYa" firstAttribute="width" secondItem="iXR-tN-R5h" secondAttribute="width" id="Brd-7i-gJD"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="XJM-lW-yIr" secondAttribute="bottom" constant="5" id="CVi-NH-fo1"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="C6f-kn-HRy" secondAttribute="bottom" constant="5" id="Ce9-lK-Laj"/>
+                <constraint firstItem="r2j-jK-BJn" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="DN6-0l-ZGD"/>
+                <constraint firstItem="XJM-lW-yIr" firstAttribute="height" secondItem="C9I-Zb-HsP" secondAttribute="height" id="DzN-53-F4x"/>
+                <constraint firstItem="N81-aV-jag" firstAttribute="leading" secondItem="UNx-ge-3dP" secondAttribute="trailing" constant="5" id="E7h-7O-kR1"/>
+                <constraint firstItem="x2k-L4-lUz" firstAttribute="height" secondItem="N6X-9a-rNB" secondAttribute="height" id="EG2-Se-w3v"/>
+                <constraint firstItem="kM3-ex-kJD" firstAttribute="width" secondItem="6Dl-nb-bDz" secondAttribute="width" id="FfQ-u1-qTa"/>
+                <constraint firstItem="nVd-pP-CnH" firstAttribute="leading" secondItem="sPq-AE-icS" secondAttribute="trailing" constant="5" id="GUE-Vw-hgR"/>
+                <constraint firstItem="m9K-u2-ZYa" firstAttribute="top" secondItem="s6z-wY-anF" secondAttribute="bottom" constant="8" id="Gn5-t0-wmR"/>
+                <constraint firstItem="N6X-9a-rNB" firstAttribute="top" secondItem="r2j-jK-BJn" secondAttribute="bottom" constant="8" id="GqC-Pz-E2c"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="blT-jd-tor" secondAttribute="bottom" constant="5" id="H3t-OR-eBh"/>
+                <constraint firstItem="J0O-SM-QZ9" firstAttribute="leading" secondItem="UbB-jF-wVb" secondAttribute="trailing" constant="5" id="HMh-Uh-HeV"/>
+                <constraint firstItem="tGK-V2-vw1" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="Ho7-td-Qth"/>
+                <constraint firstItem="lw7-8L-e5R" firstAttribute="leading" secondItem="jPt-kk-5IE" secondAttribute="trailing" constant="5" id="I52-LT-eNZ"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="iuo-Iq-g07" secondAttribute="trailing" constant="2" id="IAn-kR-qQp"/>
+                <constraint firstItem="rKV-6y-OV6" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="IeT-FF-L1K"/>
+                <constraint firstItem="N81-aV-jag" firstAttribute="width" secondItem="UNx-ge-3dP" secondAttribute="width" id="JhE-KH-Q3w"/>
+                <constraint firstItem="kef-XF-qyt" firstAttribute="height" secondItem="JDe-So-h4s" secondAttribute="height" id="JpD-eA-qNN"/>
+                <constraint firstItem="o8O-uG-ypu" firstAttribute="top" secondItem="Spv-AK-iz0" secondAttribute="bottom" constant="7" id="KJF-KP-gBT"/>
+                <constraint firstItem="UbB-jF-wVb" firstAttribute="width" secondItem="R5r-Fk-cnX" secondAttribute="width" id="KSQ-Lg-f7K"/>
+                <constraint firstItem="x2k-L4-lUz" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="LkX-Hh-xLP"/>
+                <constraint firstItem="kef-XF-qyt" firstAttribute="width" secondItem="zai-QH-Zp8" secondAttribute="width" id="LpZ-60-rmq"/>
+                <constraint firstItem="s6z-wY-anF" firstAttribute="width" secondItem="fHY-5k-Yip" secondAttribute="width" id="LwN-Di-SQY"/>
+                <constraint firstItem="blT-jd-tor" firstAttribute="leading" secondItem="VXN-ms-Hwd" secondAttribute="trailing" constant="5" id="M0Q-tQ-rcX"/>
+                <constraint firstItem="7QV-8B-gUL" firstAttribute="height" secondItem="ke4-d8-s9y" secondAttribute="height" id="MRX-X2-TvP"/>
+                <constraint firstItem="DaW-KR-jsg" firstAttribute="width" secondItem="blT-jd-tor" secondAttribute="width" multiplier="0.333333" constant="-3.3333330500000002" id="MVe-uA-wxP"/>
+                <constraint firstItem="kM3-ex-kJD" firstAttribute="leading" secondItem="6Dl-nb-bDz" secondAttribute="trailing" constant="5" id="NTT-Md-lEj"/>
+                <constraint firstItem="N81-aV-jag" firstAttribute="height" secondItem="J0O-SM-QZ9" secondAttribute="height" id="Nne-WK-mr4"/>
+                <constraint firstItem="ijR-Lc-nYp" firstAttribute="width" secondItem="m9K-u2-ZYa" secondAttribute="width" id="OHB-rF-SjC"/>
+                <constraint firstItem="ke4-d8-s9y" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="OKh-cQ-cJ4"/>
+                <constraint firstItem="Spv-AK-iz0" firstAttribute="leading" secondItem="C9I-Zb-HsP" secondAttribute="trailing" constant="5" id="ORl-cU-qR4"/>
+                <constraint firstItem="UNx-ge-3dP" firstAttribute="leading" secondItem="ijR-Lc-nYp" secondAttribute="trailing" constant="5" id="OS5-LJ-juu"/>
+                <constraint firstItem="ijR-Lc-nYp" firstAttribute="height" secondItem="R5r-Fk-cnX" secondAttribute="height" id="Pyf-bA-tuP"/>
+                <constraint firstItem="s6z-wY-anF" firstAttribute="top" secondItem="tGK-V2-vw1" secondAttribute="bottom" constant="8" id="Q8D-RQ-b6n"/>
+                <constraint firstItem="blT-jd-tor" firstAttribute="width" secondItem="VXN-ms-Hwd" secondAttribute="width" multiplier="3" constant="10" id="RDm-3Z-zux"/>
+                <constraint firstItem="WML-06-V8W" firstAttribute="width" secondItem="r2j-jK-BJn" secondAttribute="width" id="RFO-jN-0tb"/>
+                <constraint firstItem="SLN-u7-nZ5" firstAttribute="height" secondItem="N81-aV-jag" secondAttribute="height" id="RpR-D7-TYc"/>
+                <constraint firstItem="XJM-lW-yIr" firstAttribute="width" secondItem="x2k-L4-lUz" secondAttribute="width" id="S4n-hL-cnH"/>
+                <constraint firstItem="lw7-8L-e5R" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="SHE-7J-e40"/>
+                <constraint firstItem="fHY-5k-Yip" firstAttribute="height" secondItem="gG9-tr-5Vw" secondAttribute="height" id="SUB-Oq-ey8"/>
+                <constraint firstItem="Spv-AK-iz0" firstAttribute="height" secondItem="3vw-re-WVQ" secondAttribute="height" id="TJn-nj-ssO"/>
+                <constraint firstItem="7Oo-pk-LW6" firstAttribute="top" secondItem="6Dl-nb-bDz" secondAttribute="bottom" constant="8" id="Te4-kn-6tX"/>
+                <constraint firstItem="7Oo-pk-LW6" firstAttribute="leading" secondItem="3vw-re-WVQ" secondAttribute="trailing" constant="5" id="UPL-lE-exC"/>
+                <constraint firstItem="6Dl-nb-bDz" firstAttribute="leading" secondItem="lw7-8L-e5R" secondAttribute="trailing" constant="5" id="UVA-OL-7XL"/>
+                <constraint firstItem="C6f-kn-HRy" firstAttribute="width" secondItem="DaW-KR-jsg" secondAttribute="width" id="Uxu-iO-2TB"/>
+                <constraint firstItem="7QV-8B-gUL" firstAttribute="leading" secondItem="J0O-SM-QZ9" secondAttribute="trailing" constant="5" id="V7f-CV-sDS"/>
+                <constraint firstItem="JDe-So-h4s" firstAttribute="top" secondItem="kM3-ex-kJD" secondAttribute="bottom" constant="8" id="VBW-sc-ZS1"/>
+                <constraint firstItem="DaW-KR-jsg" firstAttribute="height" secondItem="ijR-Lc-nYp" secondAttribute="height" id="VJ7-uI-u4Q"/>
+                <constraint firstItem="o8O-uG-ypu" firstAttribute="width" secondItem="XJM-lW-yIr" secondAttribute="width" id="ViG-Ut-afN"/>
+                <constraint firstItem="6Dl-nb-bDz" firstAttribute="width" secondItem="lw7-8L-e5R" secondAttribute="width" id="Wew-Ec-2Pv"/>
+                <constraint firstItem="7Oo-pk-LW6" firstAttribute="width" secondItem="3vw-re-WVQ" secondAttribute="width" id="WfI-L8-rli"/>
+                <constraint firstItem="C9I-Zb-HsP" firstAttribute="top" secondItem="WML-06-V8W" secondAttribute="bottom" constant="8" id="WtL-w7-4Ub"/>
+                <constraint firstItem="7QV-8B-gUL" firstAttribute="top" secondItem="ke4-d8-s9y" secondAttribute="bottom" constant="8" id="XQE-Kk-KBE"/>
+                <constraint firstItem="o8O-uG-ypu" firstAttribute="height" secondItem="Spv-AK-iz0" secondAttribute="height" id="Xni-Wc-WI0"/>
+                <constraint firstItem="ke4-d8-s9y" firstAttribute="leading" secondItem="nVd-pP-CnH" secondAttribute="trailing" constant="5" id="ZC2-gG-CJP"/>
+                <constraint firstItem="sPq-AE-icS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="ZCl-qR-VDg"/>
+                <constraint firstItem="s6z-wY-anF" firstAttribute="leading" secondItem="fHY-5k-Yip" secondAttribute="trailing" constant="5" id="ZFE-4g-0zB"/>
+                <constraint firstItem="N6X-9a-rNB" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="2" id="ahJ-SD-r3v"/>
+                <constraint firstItem="ZRb-GI-fqa" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="b6J-lj-KiK"/>
+                <constraint firstItem="blT-jd-tor" firstAttribute="height" secondItem="kef-XF-qyt" secondAttribute="height" id="bDR-nJ-Uit"/>
+                <constraint firstItem="iXR-tN-R5h" firstAttribute="height" secondItem="fHY-5k-Yip" secondAttribute="height" id="bOV-aC-gOP"/>
+                <constraint firstItem="UbB-jF-wVb" firstAttribute="leading" secondItem="R5r-Fk-cnX" secondAttribute="trailing" constant="5" id="c8b-y4-faa"/>
+                <constraint firstItem="J0O-SM-QZ9" firstAttribute="top" secondItem="nVd-pP-CnH" secondAttribute="bottom" constant="8" id="cDz-x0-vVb"/>
+                <constraint firstItem="kef-XF-qyt" firstAttribute="leading" secondItem="zai-QH-Zp8" secondAttribute="trailing" constant="5" id="cKS-0K-7F4"/>
+                <constraint firstItem="iXR-tN-R5h" firstAttribute="width" secondItem="kef-XF-qyt" secondAttribute="width" id="cWb-VX-m1n"/>
+                <constraint firstItem="C6f-kn-HRy" firstAttribute="top" secondItem="UNx-ge-3dP" secondAttribute="bottom" constant="7" id="d7y-CG-KS9"/>
+                <constraint firstItem="fHY-5k-Yip" firstAttribute="width" secondItem="JDe-So-h4s" secondAttribute="width" id="dBK-81-9vt"/>
+                <constraint firstItem="3vw-re-WVQ" firstAttribute="top" secondItem="lw7-8L-e5R" secondAttribute="bottom" constant="8" id="dQH-gf-i1Y"/>
+                <constraint firstItem="Spv-AK-iz0" firstAttribute="width" secondItem="C9I-Zb-HsP" secondAttribute="width" id="da1-dl-Ttc"/>
+                <constraint firstItem="XJM-lW-yIr" firstAttribute="top" secondItem="C9I-Zb-HsP" secondAttribute="bottom" constant="7" id="e0B-al-JXW"/>
+                <constraint firstItem="JDe-So-h4s" firstAttribute="width" secondItem="7Oo-pk-LW6" secondAttribute="width" id="eCt-ok-eKw"/>
+                <constraint firstItem="blT-jd-tor" firstAttribute="height" secondItem="iXR-tN-R5h" secondAttribute="height" id="enH-T1-MZY"/>
+                <constraint firstItem="iuo-Iq-g07" firstAttribute="leading" secondItem="N81-aV-jag" secondAttribute="trailing" constant="5" id="fCZ-FI-Rt5"/>
+                <constraint firstItem="iXR-tN-R5h" firstAttribute="leading" secondItem="kef-XF-qyt" secondAttribute="trailing" constant="5" id="fTS-hr-5D6"/>
+                <constraint firstItem="s6z-wY-anF" firstAttribute="height" secondItem="tGK-V2-vw1" secondAttribute="height" id="fVO-VU-Nl2"/>
+                <constraint firstItem="SLN-u7-nZ5" firstAttribute="top" secondItem="N81-aV-jag" secondAttribute="bottom" constant="7" id="fig-Cs-bCl"/>
+                <constraint firstItem="C6f-kn-HRy" firstAttribute="height" secondItem="UNx-ge-3dP" secondAttribute="height" id="fqL-hp-bg8"/>
+                <constraint firstItem="kM3-ex-kJD" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="gBT-1u-3Wf"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="7QV-8B-gUL" secondAttribute="trailing" constant="2" id="gCZ-gV-Kgr"/>
+                <constraint firstItem="blT-jd-tor" firstAttribute="top" secondItem="kef-XF-qyt" secondAttribute="bottom" constant="7" id="gwQ-ah-48G"/>
+                <constraint firstItem="R5r-Fk-cnX" firstAttribute="leading" secondItem="s6z-wY-anF" secondAttribute="trailing" constant="5" id="h3v-g5-5Rn"/>
+                <constraint firstItem="jPt-kk-5IE" firstAttribute="width" secondItem="rKV-6y-OV6" secondAttribute="width" id="hKV-Af-8ms"/>
+                <constraint firstItem="gG9-tr-5Vw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="i7y-Vb-jxU"/>
+                <constraint firstItem="WML-06-V8W" firstAttribute="height" secondItem="jPt-kk-5IE" secondAttribute="height" id="iIi-lg-mrc"/>
+                <constraint firstItem="SLN-u7-nZ5" firstAttribute="leading" secondItem="C6f-kn-HRy" secondAttribute="trailing" constant="5" id="ihg-17-Wk9"/>
+                <constraint firstItem="3vw-re-WVQ" firstAttribute="height" secondItem="lw7-8L-e5R" secondAttribute="height" id="jSt-mm-7Ub"/>
+                <constraint firstItem="DaW-KR-jsg" firstAttribute="leading" secondItem="blT-jd-tor" secondAttribute="trailing" constant="5" id="k8O-AW-aw8"/>
+                <constraint firstItem="3vw-re-WVQ" firstAttribute="width" secondItem="WML-06-V8W" secondAttribute="width" id="kzE-aj-CV0"/>
+                <constraint firstItem="VXN-ms-Hwd" firstAttribute="width" secondItem="o8O-uG-ypu" secondAttribute="width" id="lL6-I4-wZ0"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="DaW-KR-jsg" secondAttribute="bottom" constant="5" id="mTS-oZ-x8n"/>
+                <constraint firstItem="ijR-Lc-nYp" firstAttribute="top" secondItem="R5r-Fk-cnX" secondAttribute="bottom" constant="8" id="mkc-mN-YJP"/>
+                <constraint firstItem="C9I-Zb-HsP" firstAttribute="width" secondItem="N6X-9a-rNB" secondAttribute="width" id="mps-EW-hLg"/>
+                <constraint firstItem="VXN-ms-Hwd" firstAttribute="leading" secondItem="o8O-uG-ypu" secondAttribute="trailing" constant="5" id="nZJ-Kl-Amy"/>
+                <constraint firstItem="nVd-pP-CnH" firstAttribute="width" secondItem="sPq-AE-icS" secondAttribute="width" id="nc4-Rm-7lo"/>
+                <constraint firstItem="UNx-ge-3dP" firstAttribute="height" secondItem="UbB-jF-wVb" secondAttribute="height" id="oOX-GS-KYa"/>
+                <constraint firstItem="iuo-Iq-g07" firstAttribute="width" secondItem="N81-aV-jag" secondAttribute="width" id="oPa-6w-78g"/>
+                <constraint firstItem="nVd-pP-CnH" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="oYM-aj-idC"/>
+                <constraint firstItem="Spv-AK-iz0" firstAttribute="top" secondItem="3vw-re-WVQ" secondAttribute="bottom" constant="8" id="ooh-Hl-nIG"/>
+                <constraint firstItem="iuo-Iq-g07" firstAttribute="height" secondItem="7QV-8B-gUL" secondAttribute="height" id="pT3-2x-Gfs"/>
+                <constraint firstItem="XJM-lW-yIr" firstAttribute="leading" secondItem="x2k-L4-lUz" secondAttribute="trailing" constant="5" id="per-Zs-j3g"/>
+                <constraint firstItem="SLN-u7-nZ5" firstAttribute="height" secondItem="iuo-Iq-g07" secondAttribute="height" id="pj4-ta-ne3"/>
+                <constraint firstItem="C9I-Zb-HsP" firstAttribute="height" secondItem="WML-06-V8W" secondAttribute="height" id="qkp-44-vsR"/>
+                <constraint firstItem="jPt-kk-5IE" firstAttribute="leading" secondItem="rKV-6y-OV6" secondAttribute="trailing" constant="5" id="rog-yb-kiU"/>
+                <constraint firstItem="7Oo-pk-LW6" firstAttribute="height" secondItem="6Dl-nb-bDz" secondAttribute="height" id="rxr-gW-KEE"/>
+                <constraint firstItem="UbB-jF-wVb" firstAttribute="height" secondItem="sPq-AE-icS" secondAttribute="height" id="s7x-7d-FH6"/>
+                <constraint firstItem="UNx-ge-3dP" firstAttribute="top" secondItem="UbB-jF-wVb" secondAttribute="bottom" constant="8" id="sQB-kn-Y6C"/>
+                <constraint firstItem="JDe-So-h4s" firstAttribute="height" secondItem="kM3-ex-kJD" secondAttribute="height" id="swT-Oj-EVj"/>
+                <constraint firstItem="kef-XF-qyt" firstAttribute="top" secondItem="JDe-So-h4s" secondAttribute="bottom" constant="8" id="tYr-ur-c5V"/>
+                <constraint firstItem="lw7-8L-e5R" firstAttribute="width" secondItem="jPt-kk-5IE" secondAttribute="width" id="tjM-r7-W9w"/>
+                <constraint firstItem="zai-QH-Zp8" firstAttribute="width" secondItem="Spv-AK-iz0" secondAttribute="width" id="tvK-B9-kBZ"/>
+                <constraint firstItem="N6X-9a-rNB" firstAttribute="height" secondItem="r2j-jK-BJn" secondAttribute="height" id="u0D-PT-4LX"/>
+                <constraint firstItem="rKV-6y-OV6" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="uOC-LJ-ft4"/>
+                <constraint firstItem="tGK-V2-vw1" firstAttribute="leading" secondItem="gG9-tr-5Vw" secondAttribute="trailing" constant="5" id="uUf-w2-j3h"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="SLN-u7-nZ5" secondAttribute="trailing" constant="2" id="v2p-cc-wJB"/>
+                <constraint firstItem="7QV-8B-gUL" firstAttribute="width" secondItem="J0O-SM-QZ9" secondAttribute="width" id="vU1-WJ-tOe"/>
+                <constraint firstItem="R5r-Fk-cnX" firstAttribute="top" secondItem="ZRb-GI-fqa" secondAttribute="bottom" constant="8" id="vl5-9l-ele"/>
+                <constraint firstItem="VXN-ms-Hwd" firstAttribute="height" secondItem="zai-QH-Zp8" secondAttribute="height" id="vpT-yq-xnI"/>
+                <constraint firstItem="jPt-kk-5IE" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="7" id="wGC-UU-Hi9"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="SLN-u7-nZ5" secondAttribute="bottom" constant="5" id="wWl-Wb-jMd"/>
+                <constraint firstItem="J0O-SM-QZ9" firstAttribute="width" secondItem="UbB-jF-wVb" secondAttribute="width" id="x4k-WO-5B7"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="x2k-L4-lUz" secondAttribute="bottom" constant="5" id="x7C-Ch-PYl"/>
+                <constraint firstItem="ke4-d8-s9y" firstAttribute="width" secondItem="nVd-pP-CnH" secondAttribute="width" id="x8q-WE-hy1"/>
+                <constraint firstItem="N81-aV-jag" firstAttribute="top" secondItem="J0O-SM-QZ9" secondAttribute="bottom" constant="8" id="xEe-ns-h22"/>
+                <constraint firstItem="C6f-kn-HRy" firstAttribute="leading" secondItem="DaW-KR-jsg" secondAttribute="trailing" constant="5" id="xj3-5q-iXN"/>
+                <constraint firstItem="o8O-uG-ypu" firstAttribute="leading" secondItem="XJM-lW-yIr" secondAttribute="trailing" constant="5" id="xuT-7G-bLb"/>
+                <constraint firstItem="fHY-5k-Yip" firstAttribute="leading" secondItem="JDe-So-h4s" secondAttribute="trailing" constant="5" id="yDV-OV-cel"/>
+                <constraint firstItem="iXR-tN-R5h" firstAttribute="top" secondItem="fHY-5k-Yip" secondAttribute="bottom" constant="8" id="yyC-Xf-AaR"/>
+                <constraint firstItem="WML-06-V8W" firstAttribute="top" secondItem="jPt-kk-5IE" secondAttribute="bottom" constant="8" id="zac-XW-q67"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <point key="canvasLocation" x="85.599999999999994" y="66.11694152923539"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="NextKeyboard" width="19" height="19"/>
+    </resources>
+</document>
